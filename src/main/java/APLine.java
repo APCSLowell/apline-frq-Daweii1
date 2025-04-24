@@ -17,12 +17,11 @@ public class APLine
   }
 
   public boolean isOnLine(int xCord, int yCord) {
-  if(yCord == (((-a*xCord)-c)/b))
+  if(((a*xCord)+(b*yCord)+c) == 0)
     return true;
-
-    else
+    else{
     return false;
-
+    }
   }
 
   
